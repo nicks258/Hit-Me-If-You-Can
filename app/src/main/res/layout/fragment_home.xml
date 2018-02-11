@@ -1,0 +1,198 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.games.hitmeifyoucan.HomeFragment">
+
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+
+        android:id="@+id/linear_layout_0"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:background="@android:color/black"
+            android:gravity="center_horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_event"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Android Event Start"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                android:textStyle="normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/black"
+            android:visibility="visible">
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_days"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="00"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_days_title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="Days"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="normal" />-->
+            <!--</LinearLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_hour"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="00"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="bold" />-->
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_hour_title"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center"-->
+                    <!--android:text="Hour"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:textSize="20dp"-->
+                    <!--android:textStyle="normal" />-->
+            <!--</LinearLayout>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_minute"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Score"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+                <View android:id="@+id/emiter_top_left"
+                    android:layout_gravity="top|start"
+                    android:foregroundGravity="left"
+                    android:layout_marginTop="-20dp"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10sp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_second"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Time"
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_second_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text=""
+                    android:textColor="@android:color/white"
+                    android:textSize="20dp"
+                    android:textStyle="normal" />
+                <View android:id="@+id/emiter_top_right"
+                    android:layout_gravity="top|end"
+                    android:layout_marginTop="-20dp"
+                    android:layout_width="1dp"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text=""-->
+            <!--android:hint="Score"-->
+            <!--android:padding="5dp"-->
+            <!--android:textColorHint="@android:color/white"-->
+            <!--android:id="@+id/score"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:textSize="30dp"-->
+            <!--android:layout_below="@+id/linear_layout_0"-->
+            <!--android:background="@android:color/black"-->
+            <!--android:textColor="@android:color/white"/>-->
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:id="@+id/hit_me"
+            android:textColor="@android:color/white"
+            android:background="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:text="@string/hit_me"
+            android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+</LinearLayout>
